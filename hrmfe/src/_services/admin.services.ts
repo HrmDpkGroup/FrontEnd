@@ -7,8 +7,8 @@ import {config} from '../_helper/config'
    * @param variables ورودی های کوئری
    * @returns می باشد json خروجی به صورت یک
    */
-export function request(qraphQlData : {query:string,variables:any}) {
-    fetch(
+export function graphrequest(qraphQlData : {query:string,variables:any}) {
+    return fetch(
         config.apiUrl,
         {
             method: 'POST',
