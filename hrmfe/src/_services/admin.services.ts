@@ -20,9 +20,9 @@ export function graphrequest(qraphQlData : {query:string,variables:any}) {
             return { message: "مشکل در ارتباط با سرور" };
         });
 }
-function handleResponse(response) {
+function handleResponse(response:any) {
     debugger;
-    return response.text().then(text => {
+    return response.text().then((text : any) => {
         const data = text && JSON.parse(text);
         if (!response.ok) {
             if (response.status === 401) {
