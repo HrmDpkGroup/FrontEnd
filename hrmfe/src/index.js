@@ -9,13 +9,13 @@ const rootElement = document.getElementById('root');
 ReactDOM.render(
     <Provider store={store}>
         <HashRouter>
-        <Switch>
-            {indexRoutes.map((prop, key) => {
-                return <Route to={prop.path} component={prop.component} key={key} />;
-                    })}
-                </Switch>
-            </HashRouter>
+            <Switch>
+                {indexRoutes.map((prop, key) => {
+                    return <Route to={prop.path} component={prop.component} key={key} />;
+                })}
+            </Switch>
+        </HashRouter>
     </Provider>
     ,
     rootElement);
-    registerServiceWorker();
+registerServiceWorker();

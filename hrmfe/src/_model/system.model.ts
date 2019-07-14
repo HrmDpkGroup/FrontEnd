@@ -1,9 +1,9 @@
 class system {
-    id = null;
+    id = "";
     name = "";
     description = "";
-    parent = null;
-    constructor(data:any) {
+    parent = "";
+    constructor(data:{id:string,name:string,description:string,parent:string}) {
         this.id = data.id;
         this.name = data.name;
         this.description = data.description;
